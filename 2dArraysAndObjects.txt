@@ -42,7 +42,7 @@ var person = {
 	lastName: "Doe"
 };
 
-console.log([0].firstName);
+console.log(person.firstName);
 
 3. Use a for...in loop to display the values of this object.
 
