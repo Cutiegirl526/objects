@@ -33,12 +33,16 @@ var uhdata = [
 
 How would you access value "Liberal Arts" in CIP_DESC?
 
+console.log(uhdata[1].CIP_DESC);
+
 2. Display "John" by extracting information from the person object
 
 var person = { 
 	firstName: "John", 
 	lastName: "Doe"
 };
+
+console.log([0].firstName);
 
 3. Use a for...in loop to display the values of this object.
 
