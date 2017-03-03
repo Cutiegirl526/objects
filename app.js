@@ -127,13 +127,13 @@ function objectMethods(car){
 	//Print the objects keys and set this value to a variable named "paramKeys";
 
 	for(var key in car){
-		console.log(key);
+		
 		keys += " " + key;
 
 		console.log(car.[key]);
 		properties += " " + 
 		car[key];
-		console.log(properties);
+		
 	}
 
 	//Print the data type of "paramKeys"
@@ -152,8 +152,15 @@ function objectMethods(car){
 	* compatible in all browsers
 	*/
 
-	return;
+console.log(keys);
+console.log(properties);
+
+console.log(car.type + car.model + car.color);
+
+	return "my car type is " + car.type + "the model is " + car.model + "and color is " + car.color + ".";
 }
+
+console.log("objects and their properties ")
 
 
 console.log("Object Methods\n");
