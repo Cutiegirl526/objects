@@ -16,9 +16,10 @@ function pastLessons(car1, car2){
 	//Print the parameters being passed through
 
 	//Create an array named "cars" and set it's values to the passed parameters
-
+var cars = [car1, car2];
+console.log(cars);
 	//Return the array values as a concatenated string
-	return 
+	return "My first car was" + car[0] + "and my second car was" + car [1];
 }
 console.log("\n***Past Lessons***\n");
 console.log(pastLessons("Toyota", "Jeep Wrangler"));
@@ -35,11 +36,21 @@ console.log("\n***End of Past Lessons***\n");
 function twoDArrays(nestedArray){
 	//Print the parameter
 
+	console.log(nestedArray);
+
 	//Print the first nested array
+
+	//[0, 1, 2, [3, 4, 5]]
+
+	console.log(nestedArray[3]);
 
 	//Print the second item in the nested array
 
+	console.log(nestedArray[3][1]);
+
 	//Can you print the third item in the *bonus* array?
+
+	console.log(nestedArray([1][3][2]));
 
 	//Create a variable called "nestedArrayString" that stores the values in the nested array as a concatenated string and use this variable as the return value of this function
 
@@ -51,9 +62,9 @@ function twoDArrays(nestedArray){
 console.log("2-D Arrays\n");
 console.log(twoDArrays([0, 1, 2, [3, 4, 5]]));
 
-/*Bonus Array
+//Bonus Array
 console.log(twoDArrays([0, 1, 2, [3, 4, 5, [6, 7, 8]]]));
-*/
+
 
 console.log("\n***End***\n");
 
@@ -100,11 +111,30 @@ console.log("\n***End***\n");
 * Return 		The objects values as a concatenated string
 */
 function objectMethods(car){
+	var keys = "";
+	var properties = "";
 	//Print the parameter being passed through
+	console.log(car);
 
 	//Print the data type of the passed parameter
+	console.log(car.length);
+
+	console.log(car.type);
+
+	console.log(car.color);
+
 
 	//Print the objects keys and set this value to a variable named "paramKeys";
+
+	for(var key in car){
+		console.log(key);
+		keys += " " + key;
+
+		console.log(car.[key]);
+		properties += " " + 
+		car[key];
+		console.log(properties);
+	}
 
 	//Print the data type of "paramKeys"
 
